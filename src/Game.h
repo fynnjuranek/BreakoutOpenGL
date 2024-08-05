@@ -1,4 +1,6 @@
 #pragma once
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 enum GameState
 {
@@ -12,7 +14,7 @@ class Game
 public:
     GameState state;
     bool keys[1024];
-    unsigned int width, height;
+    unsigned int g_width, g_height;
     Game(unsigned int width, unsigned int height);
     ~Game();
 

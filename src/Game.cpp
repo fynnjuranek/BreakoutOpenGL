@@ -1,11 +1,11 @@
 #include "Game.h"
-#include <glad/glad.h>
 
-Game::Game(unsigned int width, unsigned int height)
+Game::Game(unsigned int width, unsigned int height) : state(GAME_ACTIVE), keys(), g_width(width), g_height(height)
 {
 }
 Game::~Game()
 {
+
 }
 
 void Game::init()
