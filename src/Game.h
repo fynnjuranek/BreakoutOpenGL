@@ -12,17 +12,17 @@ enum GameState
 class Game
 {
 public:
-    GameState state;
-    bool keys[1024];
-    unsigned int g_width, g_height;
+    GameState State;
+    bool Keys[1024];
+    unsigned int Width, Height;
     Game(unsigned int width, unsigned int height);
     ~Game();
 
-    void init();
+    void Init();
 
-    void processInput(float dt);
+    void ProcessInput(float dt);
 
-    void update(float dt);
+    void Update(float dt);
 
-    void render();
+    void Render();
 };

@@ -38,7 +38,7 @@ elseif(UNIX AND NOT APPLE)
   set(LIBS )
 endif(WIN32)
 
-set(SRC_FILES ${SRC_FILES} src/Application.cpp src/Game.cpp)
+set(SRC_FILES ${SRC_FILES} src/glad.c src/stb_image.cpp src/Application.cpp src/Game.cpp src/ResourceManager.cpp src/Shader.cpp src/Texture.cpp)
 
 add_executable(BreakOut ${SRC_FILES})
 
